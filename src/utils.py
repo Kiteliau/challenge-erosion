@@ -1,0 +1,1 @@
+load_pbm(filename: str) -> list[list[int]]
