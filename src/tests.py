@@ -1,4 +1,5 @@
 import unittest
+import os
 
 from utils import img2ascii
 
@@ -54,6 +55,7 @@ class TestLoadPBM(unittest.TestCase):
     def test_1(self):
 
         for filename, expected in tests:
+            path = os.path.join("data", filename)
             result = load_pbm(filename)
             feedback = f"Le fichier filename={filename} est chargé correctement"
             self.assertEqual(result, expected, feedback)
