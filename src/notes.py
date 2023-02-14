@@ -1,0 +1,1 @@
+Pour créer un alias, on fait "alias python=python3.11"
